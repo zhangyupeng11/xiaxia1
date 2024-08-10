@@ -1,0 +1,185 @@
+{
+  "platform": {
+    "name": "TechMart",
+    "version": "2.5.1",
+    "lastUpdated": "2024-08-10T08:30:00Z"
+  },
+  "users": [
+    {
+      "id": "u001",
+      "username": "john_doe",
+      "email": "john@example.com",
+      "profile": {
+        "firstName": "John",
+        "lastName": "Doe",
+        "age": 28,
+        "address": {
+          "street": "123 Tech Lane",
+          "city": "Silicon Valley",
+          "state": "CA",
+          "zipCode": "94000",
+          "country": "USA"
+        },
+        "preferences": {
+          "newsletter": true,
+          "twoFactorAuth": false
+        }
+      },
+      "memberSince": "2022-03-15",
+      "orders": ["o001", "o003"]
+    },
+    {
+      "id": "u002",
+      "username": "jane_smith",
+      "email": "jane@example.com",
+      "profile": {
+        "firstName": "Jane",
+        "lastName": "Smith",
+        "age": 32,
+        "address": {
+          "street": "456 Gadget Street",
+          "city": "Tech Town",
+          "state": "NY",
+          "zipCode": "10001",
+          "country": "USA"
+        },
+        "preferences": {
+          "newsletter": false,
+          "twoFactorAuth": true
+        }
+      },
+      "memberSince": "2023-01-20",
+      "orders": ["o002"]
+    }
+  ],
+  "products": [
+    {
+      "id": "p001",
+      "name": "Super Laptop Pro",
+      "category": "Electronics",
+      "price": 1299.99,
+      "currency": "USD",
+      "stock": 50,
+      "specifications": {
+        "processor": "Intel i9",
+        "ram": "32GB",
+        "storage": "1TB SSD",
+        "display": "15.6 inch 4K"
+      },
+      "ratings": {
+        "average": 4.7,
+        "count": 203
+      },
+      "tags": ["laptop", "high-performance", "professional"]
+    },
+    {
+      "id": "p002",
+      "name": "SmartWatch X",
+      "category": "Wearables",
+      "price": 299.99,
+      "currency": "USD",
+      "stock": 100,
+      "specifications": {
+        "display": "AMOLED 1.5 inch",
+        "battery": "500mAh",
+        "waterResistant": true,
+        "sensors": ["heart rate", "GPS", "accelerometer"]
+      },
+      "ratings": {
+        "average": 4.5,
+        "count": 150
+      },
+      "tags": ["smartwatch", "fitness", "health"]
+    }
+  ],
+  "orders": [
+    {
+      "id": "o001",
+      "userId": "u001",
+      "date": "2024-07-15T14:30:00Z",
+      "status": "delivered",
+      "items": [
+        {
+          "productId": "p001",
+          "quantity": 1,
+          "price": 1299.99
+        },
+        {
+          "productId": "p002",
+          "quantity": 2,
+          "price": 299.99
+        }
+      ],
+      "totalAmount": 1899.97,
+      "shippingAddress": {
+        "street": "123 Tech Lane",
+        "city": "Silicon Valley",
+        "state": "CA",
+        "zipCode": "94000",
+        "country": "USA"
+      },
+      "paymentMethod": {
+        "type": "credit_card",
+        "lastFourDigits": "1234"
+      }
+    },
+    {
+      "id": "o002",
+      "userId": "u002",
+      "date": "2024-08-01T10:15:00Z",
+      "status": "processing",
+      "items": [
+        {
+          "productId": "p002",
+          "quantity": 1,
+          "price": 299.99
+        }
+      ],
+      "totalAmount": 299.99,
+      "shippingAddress": {
+        "street": "456 Gadget Street",
+        "city": "Tech Town",
+        "state": "NY",
+        "zipCode": "10001",
+        "country": "USA"
+      },
+      "paymentMethod": {
+        "type": "paypal",
+        "email": "jane@example.com"
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "id": "r001",
+      "productId": "p001",
+      "userId": "u001",
+      "rating": 5,
+      "comment": "Excellent laptop! Fast and reliable.",
+      "date": "2024-07-20T09:00:00Z",
+      "helpfulVotes": 10,
+      "images": [
+        "https://example.com/images/review1_1.jpg",
+        "https://example.com/images/review1_2.jpg"
+      ]
+    },
+    {
+      "id": "r002",
+      "productId": "p002",
+      "userId": "u002",
+      "rating": 4,
+      "comment": "Great smartwatch, but battery life could be better.",
+      "date": "2024-08-05T16:45:00Z",
+      "helpfulVotes": 5,
+      "images": []
+    }
+  ],
+  "analytics": {
+    "totalUsers": 1000,
+    "totalProducts": 500,
+    "totalOrders": 5000,
+    "revenueLastMonth": 1500000.50,
+    "topSellingProducts": ["p001", "p002"],
+    "userGrowthRate": 0.05
+  }
+}
